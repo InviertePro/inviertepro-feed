@@ -1,0 +1,42 @@
+INVIERTEPRO · PIEZAS DEL FEED · PNG 1080×1080
+=============================================
+
+Qué hay acá
+-----------
+87 imágenes listas para subir a Instagram, a tamaño nativo 1080×1080 px.
+Organizadas en carpetas por publicación. Los íconos de "carrusel" y "play"
+NO están en las imágenes a propósito: Instagram los agrega solo.
+
+Carpetas
+--------
+C-001 a C-008 → Carruseles (concepto y educación). Sube las imágenes EN ORDEN
+                (_01, _02, _03...) como carrusel.
+D-001 a D-006 → Datos de mercado (carruseles cortos, también en orden).
+R-001 a R-006 → Reels. Son VIDEO: la imagen _01 es la portada/gancho y las
+                _02, _03... son los textos que van en pantalla (referencia para
+                editar el video). Para el reel final, esos textos van sobre el
+                video en formato vertical 9:16.
+DESTACADAS    → Los 4 covers de historias destacadas (Proyectos, Testimonios,
+                Educación, Conversemos). Súbelos como portada de cada destacada.
+
+El copy (texto de cada publicación) está en COPYS.txt y también en el kit
+navegable (kit-contenido-feed-v1.html).
+
+⚑ ANTES DE PUBLICAR — validar
+------------------------------
+- Cifras de mercado (D-001 a D-006 y algunos ejemplos): +8,3%, UF 4.250/m²,
+  vacancia 4,2%, ranking de comunas, valores por comuna → son EJEMPLOS
+  realistas. Confírmalos con tu fuente (Portal Inmobiliario, CChC, tu data).
+- DFL-2 (C-005): revisar topes vigentes con contador/abogado.
+- Testimonio Javiera (R-006): usar testimonio y foto REALES con autorización.
+- Piezas con foto (D-003, D-006, R-006): hoy son degradados de relleno.
+  Reemplázalos por fotos reales de tus proyectos manteniendo el mismo
+  tratamiento (duotono azul + texto).
+
+Orden de publicación sugerido
+------------------------------
+Parte con un reel de cita (engancha), sigue con un concepto, intercala un dato
+de mercado. No pongas dos datos seguidos. A 1 pieza por día hábil, estas 20
+publicaciones cubren tu primer mes completo.
+
+Hecho con la identidad del Brand Book v2 · InviertePro · jul-2026

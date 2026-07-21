@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InviertePro · Instagram en piloto automático (API)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--celeste:#EEF2FF;--celeste2:#F5F7FF;--ink:#0F172A;--blue:#2563EB;--b400:#60A5FA;--b300:#93C5FD;--line:#E2E8F0;--s500:#64748B;--s700:#334155;--amber:#F59E0B;--green:#16A34A}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:var(--celeste2);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1.08}
+.mono{font-family:'JetBrains Mono',monospace}
+code,.code{font-family:'JetBrains Mono',monospace;font-size:13px;background:#0f172a;color:#e2e8f0;border-radius:6px;padding:2px 7px;word-break:break-all}
+.hero{background:radial-gradient(ellipse 70% 70% at 80% 0%,rgba(37,99,235,.16),transparent 62%),var(--ink);color:#fff;padding:56px 26px 46px}
+.wrap{max-width:880px;margin:0 auto;padding:0 26px}
+.hero .wrap{padding:0 26px}
+.hero .tag{display:inline-block;font-family:'JetBrains Mono';font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--b300);border:1px solid rgba(147,197,253,.35);border-radius:100px;padding:6px 14px;margin-bottom:16px}
+.hero h1{font-size:clamp(28px,5vw,44px);color:#fff}
+.hero h1 .b{color:var(--b400)}
+.hero p{color:#cbd5e1;font-size:16px;margin-top:14px;max-width:60ch}
+.who{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.who .c{flex:1;min-width:220px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px 18px}
+.who .c h4{font-size:14px;color:#fff;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.who .c p{color:#94a3b8;font-size:13px;margin:0}
+.who .tu{border-color:rgba(245,158,11,.4)} .who .tu h4{color:var(--amber)}
+.who .yo{border-color:rgba(96,165,250,.4)} .who .yo h4{color:var(--b400)}
+
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.step{display:flex;gap:18px;align-items:flex-start}
+.step .no{flex:none;width:44px;height:44px;border-radius:12px;background:var(--blue);color:#fff;display:grid;place-items:center;font-family:'Bricolage Grotesque';font-weight:800;font-size:20px}
+.step .bd{flex:1;min-width:0}
+.step h2{font-size:22px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pill{font-family:'JetBrains Mono';font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;border-radius:100px;padding:4px 9px}
+.pill.tu{background:rgba(245,158,11,.14);color:#b45309}
+.pill.yo{background:var(--celeste);color:var(--blue)}
+.pill.min{background:#F1F5F9;color:var(--s700)}
+.step p{margin-top:8px;font-size:15px;color:var(--s700)}
+ol.sub,ul.sub{margin:12px 0 0 2px;padding-left:20px}
+ol.sub li,ul.sub li{font-size:14.5px;color:var(--s700);margin-bottom:9px}
+.note{background:var(--celeste);border-left:3px solid var(--blue);border-radius:8px;padding:12px 15px;margin-top:14px;font-size:13.5px;color:var(--s700)}
+.warn{background:rgba(245,158,11,.09);border-left:3px solid var(--amber);border-radius:8px;padding:12px 15px;margin-top:14px;font-size:13.5px;color:#7c5312}
+.cmd{background:#0f172a;color:#e2e8f0;border-radius:10px;padding:14px 16px;margin-top:12px;font-family:'JetBrains Mono';font-size:12.5px;overflow-x:auto;line-height:1.7}
+.cmd .c-c{color:#64748b}
+.cmd .g{color:#86efac}
+h1.sh,h2.sh{}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+@media(max-width:640px){.opts{grid-template-columns:1fr}}
+.opt{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff}
+.opt h4{font-size:14.5px;margin-bottom:5px}
+.opt p{font-size:13px;color:var(--s500);margin:0}
+.opt .rec{font-family:'JetBrains Mono';font-size:9.5px;color:var(--green);font-weight:700;letter-spacing:.08em}
+.check{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin-top:8px}
+.check h3{font-size:18px;margin-bottom:12px}
+.check .row{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-top:1px solid var(--line)}
+.check .row:first-of-type{border-top:none}
+.check .row .b{width:22px;height:22px;border-radius:6px;border:2px solid var(--blue);flex:none;margin-top:1px}
+.check .row .t{font-size:14.5px}
+.check .row .t b{color:var(--ink)}
+.check .row .t span{color:var(--s500);font-size:13px}
+footer{background:var(--ink);color:#94a3b8;text-align:center;padding:32px;font-family:'JetBrains Mono';font-size:12px}
+.k{color:var(--blue);font-weight:700}
+</style>
+</head>
+<body>
+
+<header class="hero"><div class="wrap">
+  <span class="tag">InviertePro · Automatización · API de Meta</span>
+  <h1>Tu Instagram en <span class="b">piloto automático</span></h1>
+  <p>Esta guía deja Instagram publicando solo, vía la API oficial de Meta. El setup se hace una vez; después, cada día se publica la próxima pieza sin que muevas un dedo. Sigue los pasos en orden.</p>
+  <div class="who">
+    <div class="c tu"><h4>🟠 Lo haces tú</h4><p>Todo lo que sea entrar a tu Instagram y a Meta (cuenta, app, permisos, token). Nadie más puede: es tu identidad.</p></div>
+    <div class="c yo"><h4>🔵 Lo hago yo</h4><p>El código, el manifiesto con tus 20 piezas y copys, y dejar el publicador andando. Ya están listos.</p></div>
+  </div>
+</div></header>
+
+<div class="wrap">
+
+<section>
+  <h2 style="font-size:15px;color:var(--s500);font-family:'JetBrains Mono';letter-spacing:.1em;text-transform:uppercase">Cómo funciona (30 segundos de teoría)</h2>
+  <p style="margin-top:10px;font-size:15px;color:var(--s700)">La API de Instagram publica al instante cuando se la llama — no "agenda" a futuro. Así que el piloto automático se arma así: dejamos una <b>tarea diaria</b> que ejecuta el script una vez por día, y el script toma la <b>próxima pieza pendiente</b> del manifiesto y la publica. Simple y robusto. Para que la API pueda usar las imágenes, tienen que estar en una <b>URL pública</b> (Instagram las descarga por internet), por eso hay un paso de "hosting".</p>
+</section>
+
+<section>
+  <div class="step"><div class="no">1</div><div class="bd">
+    <h2>Cuenta de Instagram Profesional + página de Facebook <span class="pill tu">Tú</span> <span class="pill min">~5 min</span></h2>
+    <p>La API solo funciona con cuentas <b>Business o Creator</b> vinculadas a una página de Facebook. Es gratis.</p>
+    <ol class="sub">
+      <li>En la app de Instagram: <b>Configuración → Tipo de cuenta y herramientas → Cambiar a cuenta profesional → Empresa</b>.</li>
+      <li>Crea (o vincula) una <b>página de Facebook</b> de InviertePro. Si no tienes, se crea en 2 minutos en facebook.com.</li>
+      <li>Enlaza la cuenta de Instagram con esa página (Instagram te lo ofrece en el mismo flujo, o desde la página de FB → Configuración → Cuentas vinculadas).</li>
+    </ol>
+  </div></div>
+</section>
+
+<section>
+  <div class="step"><div class="no">2</div><div class="bd">
+    <h2>Crear la app en Meta for Developers <span class="pill tu">Tú</span> <span class="pill min">~10 min</span></h2>
+    <p>Es la "llave" técnica que permite publicar. También gratis.</p>
+    <ol class="sub">
+      <li>Entra a <span class="code">developers.facebook.com</span> e inicia sesión con tu Facebook. Acepta registrarte como desarrollador (es automático).</li>
+      <li><b>Mis Apps → Crear app</b>. Tipo: <b>Empresa / Business</b>. Ponle nombre, ej. "InviertePro Publisher".</li>
+      <li>Dentro de la app, agrega el producto <b>Instagram Graph API</b> (o "Instagram" → API con inicio de sesión de Facebook).</li>
+      <li>En <b>Configuración → Básica</b>, anota el <span class="k">App ID</span> y el <span class="k">App Secret</span> (los necesitarás para el token largo).</li>
+    </ol>
+    <div class="note">Como vas a publicar en <b>tu propia cuenta</b>, no necesitas la "Revisión de la app" de Meta: basta con que tu usuario tenga rol de administrador en la app (modo Desarrollo). La revisión formal solo se exige para publicar en cuentas de terceros.</div>
+  </div></div>
+</section>
+
+<section>
+  <div class="step"><div class="no">3</div><div class="bd">
+    <h2>Generar el token de acceso <span class="pill tu">Tú</span> <span class="pill min">~10 min</span></h2>
+    <p>El token es la contraseña que autoriza a publicar. Vamos por uno de <b>larga duración</b>.</p>
+    <ol class="sub">
+      <li>Abre el <b>Graph API Explorer</b>: <span class="code">developers.facebook.com/tools/explorer</span>.</li>
+      <li>Arriba a la derecha, elige tu app. Haz clic en <b>Generar token de acceso</b> y otorga estos permisos:
+        <div class="cmd">instagram_basic · instagram_content_publish · pages_show_list · pages_read_engagement · business_management</div>
+      </li>
+      <li>Copia ese token (dura ~1 hora). Conviértelo a uno de <b>60 días</b> pegando esto en el navegador (reemplaza APP_ID, APP_SECRET y TOKEN_CORTO):
+        <div class="cmd" style="white-space:normal">https://graph.facebook.com/v21.0/oauth/access_token?grant_type=fb_exchange_token&client_id=<span class="g">APP_ID</span>&client_secret=<span class="g">APP_SECRET</span>&fb_exchange_token=<span class="g">TOKEN_CORTO</span></div>
+        Te devuelve el <span class="k">token largo</span>. Ese es el que usaremos.</li>
+    </ol>
+    <div class="warn">🔒 El token es sensible como una contraseña. No lo publiques en ningún lado público. Para que <b>no expire nunca</b> (ideal para piloto automático), más adelante conviene un <b>usuario de sistema</b> en la Configuración del Negocio de Meta — te ayudo con eso cuando lleguemos ahí.</div>
+  </div></div>
+</section>
+
+<section>
+  <div class="step"><div class="no">4</div><div class="bd">
+    <h2>Obtener tu IG User ID <span class="pill tu">Tú</span> <span class="pill min">~2 min</span></h2>
+    <p>Es el número de tu cuenta de Instagram profesional. En el mismo Graph API Explorer, corre estas dos consultas:</p>
+    <ol class="sub">
+      <li><span class="code">me/accounts</span> → te da el <span class="k">ID de tu página</span> de Facebook.</li>
+      <li><span class="code">{ID_PAGINA}?fields=instagram_business_account</span> → te devuelve el <span class="k">instagram_business_account.id</span>. <b>Ese número es tu IG User ID.</b></li>
+    </ol>
+  </div></div>
+</section>
+
+<section>
+  <div class="step"><div class="no">5</div><div class="bd">
+    <h2>Hospedar las imágenes en una URL pública <span class="pill tu">Tú</span> <span class="pill yo">te guío yo</span></h2>
+    <p>La API descarga cada imagen por internet, así que la carpeta de PNG debe estar en una dirección pública. Elige una:</p>
+    <div class="opts">
+      <div class="opt"><div class="rec">RECOMENDADO</div><h4>Tu dominio inviertepro.cl</h4><p>Sube la carpeta por tu hosting (FTP/panel). Quedan URLs limpias tipo <span class="mono" style="font-size:11px">inviertepro.cl/feed/C-001/C-001_01.png</span>.</p></div>
+      <div class="opt"><h4>Repositorio público en GitHub</h4><p>Gratis y estable. Subes la carpeta y usas las URLs <span class="mono" style="font-size:11px">raw.githubusercontent.com/...</span>. Te lo dejo armado si quieres.</p></div>
+      <div class="opt"><h4>Cloudinary / Amazon S3</h4><p>Servicios de almacenamiento con capa gratis. Buenos si además vas a hospedar los videos de los reels.</p></div>
+      <div class="opt"><h4>¿No quieres complicarte?</h4><p>Dímelo y te propongo la más simple según tu hosting actual. Lo importante: que las URLs sean públicas y directas.</p></div>
+    </div>
+    <div class="note">Cuando definas el host, editas una línea en <span class="code">manifest.json</span>: el campo <span class="k">base_url</span>. Todo lo demás ya está mapeado (<span class="mono" style="font-size:11px">{base_url}/C-001/C-001_01.png</span>, etc.).</div>
+  </div></div>
+</section>
+
+<section>
+  <div class="step"><div class="no">6</div><div class="bd">
+    <h2>Configurar y probar el publicador <span class="pill yo">Yo</span> <span class="pill tu">con tus datos</span></h2>
+    <p>El script <span class="code">publicar_instagram.py</span> y el <span class="code">manifest.json</span> ya están hechos. Solo falta enchufar tus credenciales:</p>
+    <div class="cmd">
+<span class="c-c"># opción rápida: crea config.json (copia config.example.json)</span><br>
+{ "ig_user_id": "<span class="g">TU_IG_USER_ID</span>", "token": "<span class="g">TU_TOKEN_LARGO</span>" }<br><br>
+<span class="c-c"># 1) ver estado</span><br>
+python3 publicar_instagram.py --status<br><br>
+<span class="c-c"># 2) simular la próxima (no publica nada)</span><br>
+python3 publicar_instagram.py --dry-run --next<br><br>
+<span class="c-c"># 3) publicar de verdad la próxima pieza lista</span><br>
+python3 publicar_instagram.py --next
+</div>
+    <p style="margin-top:12px">Empieza publicando <b>una</b> con <span class="code">--next</span> para ver que todo calza en tu feed. Si te gusta, seguimos.</p>
+  </div></div>
+</section>
+
+<section>
+  <div class="step"><div class="no">7</div><div class="bd">
+    <h2>Dejarlo en piloto automático <span class="pill yo">Yo</span> <span class="pill min">último paso</span></h2>
+    <p>Con el publicador andando, programamos una <b>tarea diaria</b> (días hábiles) que corra <span class="code">--next</span>. Así se publica una pieza por día, sola, hasta vaciar la cola. Cuando tengas los videos de los reels, los sumamos al manifiesto y siguen igual de solos.</p>
+    <div class="note">Detalle importante para que "no pare nunca": el token de 60 días hay que renovarlo, o mejor, cambiarlo por uno de <b>usuario de sistema</b> que no expira. Lo dejamos configurado en este paso para que el piloto automático sea de verdad permanente.</div>
+  </div></div>
+</section>
+
+<section style="border-bottom:none">
+  <div class="check">
+    <h3>✅ Lo que necesito de ti para terminar</h3>
+    <div class="row"><div class="b"></div><div class="t"><b>Tu IG User ID</b> <span>(el número del paso 4)</span></div></div>
+    <div class="row"><div class="b"></div><div class="t"><b>El token largo</b> <span>(paso 3) — es sensible; me lo pasas por acá y lo uso solo para configurar, o lo corres tú mismo con la guía.</span></div></div>
+    <div class="row"><div class="b"></div><div class="t"><b>Dónde hospedarás las imágenes</b> <span>(paso 5) — tu dominio, GitHub u otro. Con eso ajusto el base_url.</span></div></div>
+    <div class="row"><div class="b"></div><div class="t"><b>Los videos de los reels</b> <span>(opcional, después) — mientras, publicamos los 14 carruseles y datos, que ya están 100% listos.</span></div></div>
+  </div>
+  <p style="margin-top:18px;font-size:14px;color:var(--s500)">¿Te trabas en algún paso de Meta? Mándame captura del error y te desatasco. Los pasos 1 a 4 son los que más laten al principio, pero se hacen una sola vez.</p>
+</section>
+
+</div>
+<footer>InviertePro · Guía de automatización de Instagram · jul-2026</footer>
+</body>
+</html>
