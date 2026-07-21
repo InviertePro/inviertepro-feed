@@ -208,23 +208,35 @@ def main():
     else:
         ap.print_help(); return
 
+    errores = []
     for p in sel:
-        try:
-            print(f"→ Publicando {p['id']} ({p['formato']}) …")
-            res = publish_post(uid, tok, p, args.reels_as_carousel, args.dry_run)
-            if args.dry_run:
-                print(f"   {res}")
-            else:
-                p["publicado"] = True
-                p["media_id"] = res
-                p["publicado_en"] = time.strftime("%Y-%m-%d %H:%M:%S")
-                save_manifest(m)
-                print(f"   ✓ Publicada. media_id={res}")
-            time.sleep(3)  # respiro entre publicaciones
-        except Exception as e:
-            print(f"   ✗ Error en {p['id']}: {e}")
-            print("   (Se detiene acá para que revises. Las anteriores quedaron guardadas.)")
-            break
+        ok = False
+        for intento in (1, 2):
+            try:
+                print(f"→ Publicando {p['id']} ({p['formato']}) … (intento {intento})")
+                res = publish_post(uid, tok, p, args.reels_as_carousel, args.dry_run)
+                if args.dry_run:
+                    print(f"   {res}")
+                else:
+                    p["publicado"] = True
+                    p["media_id"] = res
+                    p["publicado_en"] = time.strftime("%Y-%m-%d %H:%M:%S")
+                    save_manifest(m)
+                    print(f"   ✓ Publicada. media_id={res}")
+                ok = True
+                break
+            except Exception as e:
+                print(f"   ✗ Error en {p['id']} (intento {intento}): {e}")
+                if intento == 1:
+                    time.sleep(15)  # reintenta una vez tras una pausa
+        if not ok:
+            errores.append(p["id"])
+        time.sleep(8)  # respiro entre publicaciones (no satura la API)
+    if errores:
+        print(f"\n⚠ Terminó con {len(errores)} pendiente(s) por error: {errores}. "
+              "Vuelve a correr el workflow para reintentarlas (las publicadas no se repiten).")
+    else:
+        print("\n✓ Listo, todo publicado sin errores.")
 
 if __name__ == "__main__":
     main()
