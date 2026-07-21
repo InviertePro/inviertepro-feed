@@ -1,0 +1,49 @@
+name: Publicar en Instagram
+
+on:
+  workflow_dispatch:
+    inputs:
+      accion:
+        description: "Que publicar"
+        required: true
+        default: "proxima"
+        type: choice
+        options:
+          - proxima
+          - todas
+  schedule:
+    - cron: "0 13 * * 1-5"   # ~09:00 Chile, lunes a viernes
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Publicar en Instagram
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python publicar_instagram.py --next
+          elif [ "${{ github.event.inputs.accion }}" = "todas" ]; then
+            python publicar_instagram.py --all-ready
+          else
+            python publicar_instagram.py --next
+          fi
+
+      - name: Guardar estado (marcar publicadas)
+        run: |
+          git config user.name "InviertePro Bot"
+          git config user.email "bot@inviertepro.cl"
+          git add manifest.json
+          git commit -m "Marcar publicadas [skip ci]" || echo "sin cambios que guardar"
+          git push
