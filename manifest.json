@@ -1,6 +1,6 @@
 {
   "cuenta": "@inviertepro",
-  "base_url": "https://TU-HOST-AQUI.com/inviertepro-feed",
+  "base_url": "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main",
   "orden_sugerido": "Alterna: reel → concepto → dato. No dos datos seguidos. 1 x día hábil.",
   "nota": "Los reels (R-xxx) necesitan un video_url real antes de publicarse como reel. Mientras tanto pueden publicarse como carrusel usando sus image_urls, o quedar en pausa.",
   "posts": [
@@ -17,11 +17,11 @@
         "C-001/C-001_05.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-001/C-001_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-001/C-001_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-001/C-001_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-001/C-001_04.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-001/C-001_05.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-001/C-001_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-001/C-001_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-001/C-001_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-001/C-001_04.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-001/C-001_05.png"
       ],
       "video_url": null,
       "caption": "La plusvalía es la diferencia entre invertir bien y solo “comprar un depto”. 🏗️\n\nTe lo explicamos sin tecnicismos: la plusvalía es cuánto sube el valor de tu propiedad con el tiempo. Un depto en Ñuñoa que costaba UF 3.000 en 2020 hoy bordea las UF 3.900 — un +30% sin que hicieras nada, solo por comprar en la zona correcta.\n\nLa clave no es adivinar, es leer bien la ubicación: metro nuevo, barrio en desarrollo, escasez de suelo.\n\n¿Quieres saber qué comunas tienen más plusvalía proyectada este año? Escríbenos y te mostramos el mapa. 👇\n\n#InversiónInmobiliaria #Plusvalía #InvertirEnChile #BienesRaíces #Ñuñoa #InviertePro",
@@ -40,11 +40,11 @@
         "C-002/C-002_05.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-002/C-002_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-002/C-002_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-002/C-002_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-002/C-002_04.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-002/C-002_05.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-002/C-002_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-002/C-002_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-002/C-002_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-002/C-002_04.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-002/C-002_05.png"
       ],
       "video_url": null,
       "caption": "“¿Por qué todo se mide en UF y no en pesos?” Buena pregunta. 👇\n\nLa UF se ajusta con la inflación, por eso el mundo inmobiliario la usa: mantiene el valor en el tiempo. Tu crédito hipotecario también es en UF, así que la cuota en pesos varía cada mes.\n\n¿La trampa? Ganas en pesos pero debes en UF. Por eso, antes de comprar, hay que proyectar tu dividendo real — no el del folleto.\n\nTe ayudamos a hacer ese número sin letra chica. Escríbenos.\n\n#UF #CréditoHipotecario #EducaciónFinanciera #InvertirEnChile #InviertePro",
@@ -64,12 +64,12 @@
         "C-003/C-003_06.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-003/C-003_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-003/C-003_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-003/C-003_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-003/C-003_04.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-003/C-003_05.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-003/C-003_06.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-003/C-003_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-003/C-003_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-003/C-003_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-003/C-003_04.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-003/C-003_05.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-003/C-003_06.png"
       ],
       "video_url": null,
       "caption": "Tu primer depto puede ser tu mejor inversión… o tu primer dolor de cabeza. 😅\n\nLos 5 errores que vemos una y otra vez:\n\n1. Enamorarte del depto y no del negocio.\n2. Olvidar los gastos de la compra (notaría, tasación, gastos comunes).\n3. No comparar cuánto se arrienda en esa zona.\n4. No pensar en la salida (revender o arrendar).\n5. Ir solo, sin asesoría.\n\nNinguno es grave si lo sabes antes. ¿Vas por tu primer depto? Te acompañamos en la primera etapa sin costo. 👇\n\n#PrimerDepto #InversiónInmobiliaria #EducaciónFinanciera #BienesRaíces #InviertePro",
@@ -88,11 +88,11 @@
         "C-004/C-004_05.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-004/C-004_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-004/C-004_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-004/C-004_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-004/C-004_04.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-004/C-004_05.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-004/C-004_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-004/C-004_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-004/C-004_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-004/C-004_04.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-004/C-004_05.png"
       ],
       "video_url": null,
       "caption": "“¿Cuánta plata necesito para partir?” Menos de lo que crees. 👇\n\nEl pie suele ser el 20% del valor de la propiedad. Un depto de UF 3.000 significa unas UF 600 de pie; el 80% restante lo financia el banco con el crédito hipotecario.\n\nUn tip que pocos te dicen: además del pie, guarda cerca de un 3% para los gastos de la compra (notaría, tasación, conservador).\n\n¿Quieres el número exacto para tu caso? Te lo calculamos sin compromiso.\n\n#PieDepto #CréditoHipotecario #InvertirEnChile #EducaciónFinanciera #InviertePro",
@@ -111,11 +111,11 @@
         "C-005/C-005_05.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-005/C-005_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-005/C-005_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-005/C-005_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-005/C-005_04.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-005/C-005_05.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-005/C-005_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-005/C-005_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-005/C-005_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-005/C-005_04.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-005/C-005_05.png"
       ],
       "video_url": null,
       "caption": "Hay un beneficio tributario en tu depto que quizás no estás usando: el DFL-2. 🧾\n\nEl DFL-2 es una ley que aplica a viviendas de hasta 140 m² — o sea, muchísimos deptos de inversión califican. Entrega beneficios tributarios (en herencia y en algunos arriendos), con un tope de propiedades por persona.\n\nBien aprovechado, mejora la rentabilidad real de tu inversión. Mal ignorado, dejas plata sobre la mesa.\n\n¿Quieres saber si tu propiedad califica? Lo revisamos contigo.\n\n#DFL2 #Impuestos #InversiónInmobiliaria #BienesRaíces #InviertePro",
@@ -134,11 +134,11 @@
         "C-006/C-006_05.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-006/C-006_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-006/C-006_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-006/C-006_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-006/C-006_04.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-006/C-006_05.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-006/C-006_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-006/C-006_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-006/C-006_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-006/C-006_04.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-006/C-006_05.png"
       ],
       "video_url": null,
       "caption": "¿Inviertes para tener plata cada mes o para ganar en grande al vender? 🤔\n\nSon dos motores distintos:\n\n🔹 Renta: el arriendo. Flujo mensual, plata que llega hoy.\n🔹 Plusvalía: cuánto sube el valor de la propiedad. Ganancia al vender, mañana.\n\nLa buena noticia: no tienes que elegir. Una inversión bien armada combina las dos, y la mezcla ideal depende de tu momento y tu meta.\n\n¿Buscas flujo, crecimiento o ambos? Conversemos y armamos tu estrategia.\n\n#RentabilidadInmobiliaria #Plusvalía #Arriendo #InvertirEnChile #InviertePro",
@@ -157,11 +157,11 @@
         "C-007/C-007_05.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-007/C-007_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-007/C-007_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-007/C-007_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-007/C-007_04.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-007/C-007_05.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-007/C-007_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-007/C-007_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-007/C-007_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-007/C-007_04.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-007/C-007_05.png"
       ],
       "video_url": null,
       "caption": "Cómo comprar una propiedad de UF 3.000 poniendo solo UF 600. No es magia, es apalancamiento. 👇\n\nApalancarse es usar el crédito del banco para controlar un activo más grande del que podrías comprar al contado.\n\nEjemplo: pones UF 600 de pie y el banco financia UF 2.400. Manejas una propiedad de UF 3.000. Si esa propiedad sube un 10%, tu ganancia se calcula sobre las UF 3.000 completas, no solo sobre tus 600. Ahí está el poder.\n\nOjo: el mismo efecto amplifica el riesgo. Por eso se hace con cabeza y asesoría. Te explicamos cómo.\n\n#Apalancamiento #InversiónInmobiliaria #EducaciónFinanciera #BienesRaíces #InviertePro",
@@ -180,11 +180,11 @@
         "C-008/C-008_05.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-008/C-008_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-008/C-008_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-008/C-008_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-008/C-008_04.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/C-008/C-008_05.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-008/C-008_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-008/C-008_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-008/C-008_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-008/C-008_04.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/C-008/C-008_05.png"
       ],
       "video_url": null,
       "caption": "¿Cómo saber en 10 segundos si un arriendo vale la pena? Cap rate. 📊\n\nEl cap rate es la rentabilidad anual del arriendo sobre el valor de la propiedad. Fórmula simple:\n\nArriendo anual ÷ precio de la propiedad.\n\nEjemplo: si arriendas en UF 150 al año una propiedad de UF 3.000, tu cap rate es 5%. Mientras más alto, mejor flujo genera.\n\nSirve para comparar dos propiedades al toque, sin planillas eternas. ¿Quieres el cap rate de una propiedad que estás mirando? Te lo calculamos.\n\n#CapRate #RentabilidadInmobiliaria #InvertirEnChile #EducaciónFinanciera #InviertePro",
@@ -201,9 +201,9 @@
         "D-001/D-001_03.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-001/D-001_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-001/D-001_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-001/D-001_03.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-001/D-001_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-001/D-001_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-001/D-001_03.png"
       ],
       "video_url": null,
       "caption": "+8,3% al año. Eso rindió, en promedio, un depto en la zona oriente los últimos 5 años. 📈\n\nPonlo en perspectiva: una plusvalía promedio de +8,3% anual significa que un depto de UF 3.000 sumó cerca de UF 250 cada año — sin que el dueño hiciera absolutamente nada más que haber comprado en la zona correcta.\n\nNo todas las comunas rinden igual, y el pasado no garantiza el futuro. Por eso mostramos dónde está la oportunidad hoy, no dónde estuvo.\n\n¿Te mandamos el mapa de plusvalía actualizado? Escríbenos. 👇\n\n#Plusvalía #MercadoInmobiliario #InvertirEnChile #Santiago #InviertePro",
@@ -220,9 +220,9 @@
         "D-002/D-002_03.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-002/D-002_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-002/D-002_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-002/D-002_03.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-002/D-002_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-002/D-002_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-002/D-002_03.png"
       ],
       "video_url": null,
       "caption": "UF 4.250 el m² en Ñuñoa. ¿Caro o todavía es negocio? 👇\n\nEl m² promedio en Ñuñoa bordea las UF 4.250. Hace 5 años estaba cerca de UF 3.100: la llegada del metro y la consolidación del barrio empujaron el valor con fuerza.\n\n¿Significa que ya “se pasó”? No necesariamente — depende del proyecto, el tramo de la comuna y tu horizonte. Comprar caro en la calle correcta puede rendir más que comprar barato en la equivocada.\n\nTe ayudamos a leerlo. Conversemos.\n\n#Ñuñoa #MercadoInmobiliario #ValorM2 #InvertirEnChile #InviertePro",
@@ -239,9 +239,9 @@
         "D-003/D-003_03.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-003/D-003_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-003/D-003_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-003/D-003_03.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-003/D-003_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-003/D-003_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-003/D-003_03.png"
       ],
       "video_url": null,
       "caption": "¿Dónde rinde más arrendar en Santiago este 2026? El ranking. 📍\n\nLas comunas donde el arriendo rinde mejor respecto al precio de compra suelen ser las más “pro”: alta demanda de arriendo y valores de entrada más accesibles.\n\nNuestro top 5 de rentabilidad para 2026:\n1️⃣ Estación Central\n2️⃣ Santiago Centro\n3️⃣ San Miguel\n4️⃣ Independencia\n5️⃣ La Cisterna\n\nOjo: mayor rentabilidad a veces viene con más rotación de arrendatarios. Hay que mirar el conjunto.\n\n¿Quieres el informe completo con cifras? Escríbenos “RANKING” por DM. 👇\n\n#RentabilidadInmobiliaria #Santiago #InvertirEnChile #MercadoInmobiliario #InviertePro",
@@ -258,9 +258,9 @@
         "D-004/D-004_03.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-004/D-004_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-004/D-004_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-004/D-004_03.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-004/D-004_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-004/D-004_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-004/D-004_03.png"
       ],
       "video_url": null,
       "caption": "Vacancia 4,2% en Santiago. Traducción: los deptos se están arrendando rápido. 🔑\n\nLa vacancia mide qué porcentaje de los deptos en arriendo está desocupado. Un 4,2% es una cifra sana: significa que de cada 100 deptos, solo unos 4 están sin arrendatario.\n\n¿Por qué te importa como inversionista? Menos vacancia = menos meses sin recibir arriendo = mejor flujo real.\n\n¿Quieres saber qué tan rápido arrendaría un depto tuyo (o uno que estás mirando)? Te damos un estimado.\n\n#Arriendo #Vacancia #MercadoInmobiliario #InvertirEnChile #InviertePro",
@@ -277,9 +277,9 @@
         "D-005/D-005_03.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-005/D-005_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-005/D-005_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-005/D-005_03.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-005/D-005_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-005/D-005_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-005/D-005_03.png"
       ],
       "video_url": null,
       "caption": "¿Tu plata rinde 4,5% al año? Un arriendo bien elegido, sí. 💰\n\nLa rentabilidad bruta de arrendar un depto en Santiago hoy ronda el 4,5% a 5,5% anual — sin contar la plusvalía, que se suma aparte.\n\nComparado con muchos instrumentos conservadores, un buen arriendo compite bien, con la ventaja de un activo real detrás.\n\n“Bruta” es la palabra clave: hay que descontar gastos y meses de vacancia para llegar a la neta. Nosotros te hacemos esa proyección realista, sin números inflados. Escríbenos.\n\n#RentabilidadInmobiliaria #Arriendo #EducaciónFinanciera #InvertirEnChile #InviertePro",
@@ -296,9 +296,9 @@
         "D-006/D-006_03.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-006/D-006_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-006/D-006_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/D-006/D-006_03.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-006/D-006_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-006/D-006_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/D-006/D-006_03.png"
       ],
       "video_url": null,
       "caption": "El mismo m² cuesta el doble según la comuna. ¿Sabes cuánto vale el tuyo? 🗺️\n\nEl valor del m² cambia muchísimo según dónde mires. Algunas referencias de Santiago:\n\n🔹 Las Condes: UF 6+\n🔹 Ñuñoa: ~UF 4,2\n🔹 San Miguel: ~UF 3,1\n🔹 Estación Central: ~UF 2,8\n\nMás caro no siempre es mejor negocio: a veces la comuna “media” rinde más en arriendo. Todo depende de tu objetivo.\n\n¿Quieres saber el valor y el potencial de tu comuna? Mándanosla por DM y te contamos. 👇\n\n#ValorM2 #MercadoInmobiliario #Santiago #InvertirEnChile #InviertePro",
@@ -316,10 +316,10 @@
         "R-001/R-001_04.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-001/R-001_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-001/R-001_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-001/R-001_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-001/R-001_04.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-001/R-001_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-001/R-001_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-001/R-001_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-001/R-001_04.png"
       ],
       "video_url": "",
       "caption": "El mejor momento para invertir fue ayer. El segundo mejor es hoy. ⏳\n\nEsperar “el momento perfecto” es el error más caro que existe en inversión inmobiliaria. Mientras esperas, la UF sube, los precios suben y el pie que necesitas también.\n\nNo se trata de apurarse sin pensar — se trata de empezar a conversar, aprender y prepararte. Eso ya es avanzar.\n\n¿Damos el primer paso juntos? Te escuchamos sin compromiso. 👇\n\n#InversiónInmobiliaria #Mindset #InvertirEnChile #BienesRaíces #InviertePro",
@@ -337,10 +337,10 @@
         "R-002/R-002_04.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-002/R-002_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-002/R-002_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-002/R-002_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-002/R-002_04.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-002/R-002_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-002/R-002_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-002/R-002_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-002/R-002_04.png"
       ],
       "video_url": "",
       "caption": "Un buen negocio no parte por el depto. Parte por ti. 🎯\n\nTe armamos un portafolio pensado para ti, no un depto sacado de un catálogo. Suena obvio, pero casi nadie lo hace: la mayoría te muestra propiedades antes de entender qué necesitas.\n\nNosotros invertimos el orden. Primero tu meta, tu presupuesto y tu horizonte. Después, la propiedad que calza.\n\n¿Conversamos sobre lo tuyo? 👇\n\n#AsesoríaInmobiliaria #InvertirEnChile #InversiónInmobiliaria #Cercanía #InviertePro",
@@ -358,10 +358,10 @@
         "R-003/R-003_04.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-003/R-003_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-003/R-003_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-003/R-003_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-003/R-003_04.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-003/R-003_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-003/R-003_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-003/R-003_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-003/R-003_04.png"
       ],
       "video_url": "",
       "caption": "Te vamos a contar cómo ganamos plata. Sin filtro. 💬\n\nLa mayoría del rubro evita este tema. Nosotros lo ponemos al frente: nuestra comisión la paga la inmobiliaria, no te la cobramos a ti por fuera. Y cada recomendación que hacemos viene con sus riesgos explicados.\n\n¿Por qué contarlo? Porque cuando entiendes cómo ganamos, puedes confiar en lo que te decimos. La transparencia no es un adorno: es todo el modelo.\n\n¿Dudas sobre cómo trabajamos? Pregúntanos lo que quieras. 👇\n\n#Transparencia #AsesoríaInmobiliaria #ConfianzaRadical #InvertirEnChile #InviertePro",
@@ -379,10 +379,10 @@
         "R-004/R-004_04.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-004/R-004_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-004/R-004_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-004/R-004_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-004/R-004_04.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-004/R-004_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-004/R-004_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-004/R-004_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-004/R-004_04.png"
       ],
       "video_url": "",
       "caption": "“No esperes a comprar bienes raíces. Compra bienes raíces y espera.” 🏢\n\nEs un dicho viejo del rubro, pero es pura matemática: la plusvalía necesita tiempo, y el tiempo solo corre si ya compraste. Los que esperan “el momento” terminan comprando más caro años después.\n\nEsto no es un llamado a comprar cualquier cosa apurado. Es un recordatorio de que empezar temprano, con la propiedad correcta y buena asesoría, es la mitad del negocio.\n\n¿Quieres que te ayudemos a dar ese primer paso bien dado? 👇\n\n#InversiónInmobiliaria #Plusvalía #Mindset #InvertirEnChile #InviertePro",
@@ -400,10 +400,10 @@
         "R-005/R-005_04.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-005/R-005_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-005/R-005_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-005/R-005_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-005/R-005_04.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-005/R-005_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-005/R-005_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-005/R-005_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-005/R-005_04.png"
       ],
       "video_url": "",
       "caption": "La pregunta que nadie del rubro quiere responder: ¿cómo ganan plata? Acá va. 💸\n\nTransparencia de verdad, no de folleto:\n\n1️⃣ Nuestra comisión la paga la inmobiliaria del proyecto — a ti no te la cobramos por fuera.\n2️⃣ Si en tu caso existiera algún costo, lo sabes antes de firmar. Cero letra chica.\n\nEso es todo. Sin sorpresas al final del proceso.\n\nCreemos que un cliente que entiende cómo ganamos es un cliente que vuelve y recomienda. ¿Preguntas? Las respondemos todas. 👇\n\n#Transparencia #SinLetraChica #AsesoríaInmobiliaria #InvertirEnChile #InviertePro",
@@ -421,10 +421,10 @@
         "R-006/R-006_04.png"
       ],
       "image_urls": [
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-006/R-006_01.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-006/R-006_02.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-006/R-006_03.png",
-        "https://TU-HOST-AQUI.com/inviertepro-feed/R-006/R-006_04.png"
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-006/R-006_01.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-006/R-006_02.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-006/R-006_03.png",
+        "https://raw.githubusercontent.com/InviertePro/inviertepro-feed/main/R-006/R-006_04.png"
       ],
       "video_url": "",
       "caption": "“Pensé que comprar un depto era para más adelante. Me equivoqué.” — Javiera, 27. 🔑\n\nJaviera creía que invertir en una propiedad era para “cuando ganara más”. Le hicimos el número real —sin adornos, con sus gastos y su pie de verdad— y resultó que sí le daba.\n\nHoy tiene su primer depto arrendado, generando renta y sumando plusvalía.\n\nNo hay una edad ni un sueldo mágico para partir. Hay que hacer bien los números. ¿Hacemos los tuyos? 👇\n\n(Testimonio real, compartido con autorización.)\n\n#Testimonio #PrimerDepto #InvertirEnChile #HistoriaReal #InviertePro",
