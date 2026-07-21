@@ -83,21 +83,37 @@ def publish_media(uid, tok, creation_id):
 def container_status(cid, tok):
     return _call("GET", cid, {"fields": "status_code", "access_token": tok}).get("status_code")
 
+def wait_ready(cid, tok, tries=30, delay=4):
+    """Espera a que un contenedor quede FINISHED antes de publicar.
+    Evita el error 9007 'El archivo multimedia no está listo para publicar'."""
+    st = None
+    for _ in range(tries):
+        st = container_status(cid, tok)
+        if st == "FINISHED":
+            return True
+        if st in ("ERROR", "EXPIRED"):
+            raise RuntimeError(f"El contenedor quedó en estado {st}.")
+        time.sleep(delay)
+    raise RuntimeError(f"Timeout esperando que el contenido quede listo (último estado: {st}).")
+
 # ---------- publicación por tipo ----------
 def pub_single(uid, tok, url, caption):
     cid = create_media(uid, tok, {"image_url": url, "caption": caption})
+    wait_ready(cid, tok)
     return publish_media(uid, tok, cid)
 
 def pub_carousel(uid, tok, urls, caption):
     children = []
     for u in urls[:10]:
         child = create_media(uid, tok, {"image_url": u, "is_carousel_item": "true"})
+        wait_ready(child, tok)          # esperar que cada imagen quede lista
         children.append(child)
     cid = create_media(uid, tok, {
         "media_type": "CAROUSEL",
         "children": ",".join(children),
         "caption": caption
     })
+    wait_ready(cid, tok)                 # esperar que el carrusel completo quede listo
     return publish_media(uid, tok, cid)
 
 def pub_reel(uid, tok, video_url, caption):
